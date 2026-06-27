@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atıl Bilge Örüm | Product Builder & Senior PM</title>
+    <meta name="description" content="Portfolio of Atıl Bilge Örüm, Product Builder and Senior Product Manager. Highlighting live AI applications, enterprise prototyping workflows, and product leadership.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0a2540',
+                        accent: '#635bff',
+                        accentHover: '#0a2540',
+                        surface: '#ffffff',
+                        background: '#f7f9fc',
+                        muted: '#425466',
+                        border: '#e6ebf1'
+                    },
+                    borderRadius: {
+                        '3xl': '24px',
+                        '4xl': '32px'
+                    },
+                    boxShadow: {
+                        'soft': '0 15px 35px rgba(0,0,0,0.04)',
+                        'soft-hover': '0 20px 40px rgba(0,0,0,0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f7f9fc; }
+        .glass-badge { background: rgba(99, 91, 255, 0.1); color: #635bff; }
+        .diagram-arrow { position: relative; }
+        .diagram-arrow::after {
+            content: '\f061';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: -24px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #cbd5e1;
+        }
+        @media (max-width: 768px) {
+            .diagram-arrow::after {
+                content: '\f063';
+                right: 50%;
+                bottom: -24px;
+                top: auto;
+                transform: translateX(50%);
+            }
+        }
+    </style>
+</head>
+<body class="text-primary antialiased pt-16 pb-24">
+
+    <main class="max-w-5xl mx-auto px-6">
+        
+        <!-- Header -->
+        <header class="text-center mb-20">
+            <div class="inline-block mb-4">
+                <img src="profile.png" alt="Atıl Bilge Örüm" class="w-24 h-24 rounded-full border-4 border-white shadow-md mx-auto object-cover">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-3">Atıl Bilge Örüm</h1>
+            <h2 class="text-xl md:text-2xl text-accent font-medium mb-6">Product Builder & Senior Product Manager</h2>
+            
+            <p class="max-w-2xl mx-auto text-muted text-lg leading-relaxed mb-8">
+                I don't just write PRDs and wait for engineering sprints. I design systems, validate with real users, and ship working prototypes from zero to production.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6 text-sm font-medium">
+                <span class="flex items-center gap-2 text-muted"><i class="fa-solid fa-location-dot"></i> Novi Sad, Serbia (Remote/Hub)</span>
+                <a href="https://linkedin.com/in/atilbilge" target="_blank" class="flex items-center gap-2 text-accent hover:text-primary transition-colors"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:atilbilge@gmail.com" class="flex items-center gap-2 text-accent hover:text-primary transition-colors"><i class="fa-solid fa-envelope"></i> atilbilge@gmail.com</a>
+            </div>
+        </header>
+
+        <section class="mb-20">
+            <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-rocket text-accent"></i> Live Products & AI Artifacts
+            </h3>
+
+            <!-- Paletra -->
+            <div class="bg-surface rounded-3xl p-8 md:p-10 shadow-soft hover:shadow-soft-hover transition-all duration-300 border border-border mb-8">
+                <!-- Header (Logo, Title, Tags) -->
+                <div class="flex items-center flex-wrap gap-4 mb-6 pb-6 border-b border-border">
+                    <img src="paletra_logo.png" alt="Paletra Logo" class="w-14 h-14 rounded-2xl shadow-sm object-cover">
+                    <div class="flex flex-col gap-1">
+                        <div class="flex items-center flex-wrap gap-3">
+                            <h4 class="text-2xl font-bold">Paletra</h4>
+                            <span class="glass-badge px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">AI Native App</span>
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">Live</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold"><i class="fa-brands fa-apple"></i> iOS</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold"><i class="fa-brands fa-google-play"></i> Android</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold">LLM API</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold">Antigravity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Columns -->
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-2/3">
+                        <p class="text-muted mb-6">
+                            An AI-driven seasonal color analysis mobile application. I managed the entire cycle—from prompt architecture and core logic to App Store/Play Store deployment—entirely independently using Antigravity.
+                        </p>
+                        
+                        <!-- Architecture & Tradeoffs -->
+                        <div class="mb-8 border-t border-border pt-6">
+                            <h5 class="text-lg font-bold mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-microchip text-accent"></i> Architecture & Tradeoffs
+                            </h5>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h6 class="text-xs font-bold text-accent uppercase tracking-wider mb-1">Workflow Automated</h6>
+                                    <p class="text-sm text-muted leading-relaxed">
+                                        Automated the traditionally manual and expensive process of personal seasonal color analysis. Instead of relying on human consultants, it uses LLM vision capabilities to instantly analyze user photos. I managed the entire cycle—from prompt architecture and AI rules to full production deployment—entirely independently.
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <h6 class="text-xs font-bold text-accent uppercase tracking-wider mb-1">Cost & Latency Tradeoff</h6>
+                                    <p class="text-sm text-muted leading-relaxed">
+                                        To navigate high Vision API token costs, I implemented lossless image compression to minimize the input payload without degrading analysis quality. For the output, I decoupled the report generation: I relied on the LLM strictly for the high-reasoning, expert analysis phase, while rendering all repetitive and structured report components locally via code optimizations. Combined with asynchronous UI loading states to mask inference latency, this ensured scalable unit economics and a seamless user experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <a href="https://apps.apple.com/us/app/paletra-color-analysis/id6763939525" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-primary border border-border font-medium py-2.5 px-4 rounded-xl transition-colors text-sm shadow-sm">
+                                <i class="fa-brands fa-apple text-base"></i> App Store
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.aboptima.paletra" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-primary border border-border font-medium py-2.5 px-4 rounded-xl transition-colors text-sm shadow-sm">
+                                <i class="fa-brands fa-google-play text-sm"></i> Google Play
+                            </a>
+                            <a href="https://paletra.app" target="_blank" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accentHover text-white font-medium py-2.5 px-4 rounded-xl transition-colors text-sm shadow-sm">
+                                <i class="fa-solid fa-globe text-sm"></i> Visit Website
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Media Player -->
+                    <div class="md:w-1/3 flex flex-col gap-4">
+                        <div class="bg-black rounded-2xl aspect-[967/2097] overflow-hidden border border-border shadow-soft relative group">
+                            <img 
+                                src="paletra.gif" 
+                                alt="Paletra Demo" 
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Stanomer -->
+                <div class="bg-surface rounded-3xl p-8 shadow-soft hover:shadow-soft-hover transition-all duration-300 border border-border flex flex-col h-full">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="stanomer_logo.png" alt="Stanomer Logo" class="w-12 h-12 rounded-xl object-cover">
+                        <div>
+                            <h4 class="text-xl font-bold">Stanomer</h4>
+                            <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">Live on Web, iOS & Android</span>
+                        </div>
+                    </div>
+                    <p class="text-muted text-sm mb-6 flex-grow">
+                        A privacy-first digital property management assistant localized for the Serbian rental market. Architected with a "local-first" storage logic rather than cloud-dependence to ensure maximum user privacy.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-3 mb-6">
+                        <div class="bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm aspect-[9/19.5]">
+                            <img src="st1.jpg" alt="Stanomer Screenshot 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm aspect-[9/19.5]">
+                            <img src="st2.jpg" alt="Stanomer Screenshot 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm aspect-[9/19.5]">
+                            <img src="st3.jpg" alt="Stanomer Screenshot 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <a href="https://stanomer.online" target="_blank" class="inline-block text-center bg-gray-50 hover:bg-gray-100 text-primary font-medium py-2 px-4 rounded-xl transition-colors border border-gray-200 w-full">View Application <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i></a>
+                </div>
+
+                <!-- ABFlasCards -->
+                <div class="bg-surface rounded-3xl p-8 shadow-soft hover:shadow-soft-hover transition-all duration-300 border border-border flex flex-col h-full">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="ab_flashcards_logo.png" alt="ABFlasCards Logo" class="w-12 h-12 rounded-xl object-cover">
+                        <div>
+                            <h4 class="text-xl font-bold">ABFlasCards</h4>
+                            <span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-semibold">Live on Android</span>
+                        </div>
+                    </div>
+                    <p class="text-muted text-sm mb-6 flex-grow">
+                        A lightweight, highly responsive learning utility application. Completely designed, developed, and deployed independently to solve a personal language learning pain point.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-3 mb-6">
+                        <div class="bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm aspect-[9/19.5]">
+                            <img src="ab1.webp" alt="ABFlasCards Screenshot 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm aspect-[9/19.5]">
+                            <img src="ab2.webp" alt="ABFlasCards Screenshot 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 rounded-2xl overflow-hidden shadow-sm aspect-[9/19.5]">
+                            <img src="ab3.webp" alt="ABFlasCards Screenshot 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.absoft.abflashcards&hl=rs" target="_blank" class="inline-block text-center bg-gray-50 hover:bg-gray-100 text-primary font-medium py-2 px-4 rounded-xl transition-colors border border-gray-200 w-full">View on Play Store <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-diagram-project text-accent"></i> Enterprise Rapid Prototyping
+            </h3>
+
+            <!-- Gravity & Orbit -->
+            <div class="bg-surface rounded-3xl p-8 md:p-10 shadow-soft border border-border mb-8">
+                <div class="mb-8">
+                    <h4 class="text-2xl font-bold mb-2">Gravity & Orbit (Internal Tools)</h4>
+                    <p class="text-muted">Bridged the gap between product ideation and engineering execution at Eva Commerce. Instead of static Notion PRDs, I built interactive, working prototypes to validate logic instantly.</p>
+                </div>
+
+                <!-- Process Diagram using CSS -->
+                <div class="bg-background rounded-2xl p-6 md:p-8 border border-border">
+                    <h5 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-6">The "Zero to Prototype" Workflow</h5>
+                    
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4 relative">
+                        
+                        <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-1/4 text-center diagram-arrow z-10">
+                            <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fa-regular fa-lightbulb"></i>
+                            </div>
+                            <h6 class="font-bold text-sm mb-1">1. Ideation</h6>
+                            <p class="text-xs text-gray-500">Business needs defined</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-accent shadow-md w-full md:w-1/4 text-center diagram-arrow z-10 transform scale-105">
+                            <div class="w-10 h-10 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h6 class="font-bold text-sm mb-1 text-accent">2. Rapid Build</h6>
+                            <p class="text-xs text-gray-500">Working prototype built in hours via Antigravity</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-1/4 text-center diagram-arrow z-10">
+                            <div class="w-10 h-10 bg-green-50 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fa-solid fa-users-viewfinder"></i>
+                            </div>
+                            <h6 class="font-bold text-sm mb-1">3. Validation</h6>
+                            <p class="text-xs text-gray-500">Stakeholder interaction & feedback</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm w-full md:w-1/4 text-center z-10">
+                            <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h6 class="font-bold text-sm mb-1">4. Handoff</h6>
+                            <p class="text-xs text-gray-500">Validated logic sent to Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Help.eva.guru -->
+            <div class="bg-surface rounded-3xl p-8 md:p-10 shadow-soft border border-border">
+                <div class="mb-8">
+                    <h4 class="text-2xl font-bold mb-2">Help Center Architecture (help.eva.guru)</h4>
+                    <p class="text-muted">Designed a Notion-backed infrastructure from scratch. Built the first fully working version to empower the product team to write, edit, and publish articles instantly without developer dependency.</p>
+                </div>
+
+                <!-- Architecture Diagram -->
+                <div class="bg-background rounded-2xl p-6 md:p-8 border border-border">
+                    <h5 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-6">CMS Architecture Flow</h5>
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                        <!-- Step 1 -->
+                        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm w-full md:w-64 text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion" class="w-10 h-10 mx-auto mb-3 opacity-80">
+                            <h6 class="font-bold text-sm">Product Team</h6>
+                            <p class="text-xs text-gray-500 mt-1">Writes & updates docs directly in Notion</p>
+                        </div>
+
+                        <!-- Arrow -->
+                        <div class="text-gray-300 hidden md:block"><i class="fa-solid fa-arrow-right-long text-2xl"></i></div>
+                        <div class="text-gray-300 md:hidden"><i class="fa-solid fa-arrow-down-long text-2xl"></i></div>
+
+                        <!-- Step 2 -->
+                        <div class="bg-primary text-white p-6 rounded-2xl shadow-lg w-full md:w-64 text-center relative overflow-hidden">
+                            <div class="absolute -right-4 -top-4 w-16 h-16 bg-white opacity-10 rounded-full"></div>
+                            <i class="fa-solid fa-gears text-2xl mb-3 text-accent"></i>
+                            <h6 class="font-bold text-sm">Notion API Integration</h6>
+                            <p class="text-xs text-gray-300 mt-1">My Prototype: Fetches data & renders web pages dynamically</p>
+                        </div>
+
+                        <!-- Arrow -->
+                        <div class="text-gray-300 hidden md:block"><i class="fa-solid fa-arrow-right-long text-2xl"></i></div>
+                        <div class="text-gray-300 md:hidden"><i class="fa-solid fa-arrow-down-long text-2xl"></i></div>
+
+                        <!-- Step 3 -->
+                        <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm w-full md:w-64 text-center">
+                            <i class="fa-solid fa-globe text-3xl mb-3 text-blue-500"></i>
+                            <h6 class="font-bold text-sm">Live Help Center</h6>
+                            <p class="text-xs text-gray-500 mt-1">Handoff to Eng. for optimization & scale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <i class="fa-solid fa-building text-accent"></i> Enterprise Foundation
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Eva -->
+                <div class="bg-surface rounded-3xl p-6 shadow-sm border border-border">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="font-bold">Eva Commerce</h4>
+                        <span class="text-xs text-muted font-medium bg-gray-100 px-2 py-1 rounded">2022 - Present</span>
+                    </div>
+                    <p class="text-sm font-medium text-accent mb-2">Head of Product Excellence / PM</p>
+                    <p class="text-xs text-muted leading-relaxed">Managed cross-functional teams, guided advanced data analytics, and oversaw algorithm development for Amazon seller ads optimization.</p>
+                </div>
+
+                <!-- Agito -->
+                <div class="bg-surface rounded-3xl p-6 shadow-sm border border-border">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="font-bold">Agito</h4>
+                        <span class="text-xs text-muted font-medium bg-gray-100 px-2 py-1 rounded">2006 - 2022</span>
+                    </div>
+                    <p class="text-sm font-medium text-accent mb-2">Senior Consultant Analyst Manager</p>
+                    <p class="text-xs text-muted leading-relaxed">Managed multiple teams (5-10 analysts) overseeing large-scale IT transformation and migration projects in Insurtech.</p>
+                </div>
+
+                <!-- HSBC -->
+                <div class="bg-surface rounded-3xl p-6 shadow-sm border border-border">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="font-bold">HSBC</h4>
+                        <span class="text-xs text-muted font-medium bg-gray-100 px-2 py-1 rounded">2013</span>
+                    </div>
+                    <p class="text-sm font-medium text-accent mb-2">Senior Analyst</p>
+                    <p class="text-xs text-muted leading-relaxed">Prepared business analysis plans and drove enterprise-level integrations including the IVR system project.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-surface rounded-3xl p-8 shadow-sm border border-border flex flex-col md:flex-row gap-8 items-center justify-between">
+                <div>
+                    <h4 class="font-bold mb-2">Certifications & Toolkit</h4>
+                    <p class="text-sm text-muted">Rooted in strong analytical frameworks while embracing modern development speed.</p>
+                </div>
+                <div class="flex flex-wrap justify-end gap-2">
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">IIBA® CBAP®</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">PSPO™</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">SQL & Python</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">API Design</span>
+                    <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-sm font-medium">Agile/Scrum</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-sm text-gray-400 mt-20">
+        &copy; 2024 Atıl Bilge Örüm. Built for impact.
+    </footer>
+
+</body>
+</html>
