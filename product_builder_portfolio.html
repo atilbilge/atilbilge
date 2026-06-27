@@ -72,7 +72,28 @@
 </head>
 <body class="text-primary antialiased pt-16 pb-24">
 
-    <main class="max-w-5xl mx-auto px-6">
+    <!-- Access Control Modal -->
+    <div id="access-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-[#0a2540]/80 backdrop-blur-md p-6">
+        <div class="w-full max-w-sm bg-white rounded-3xl p-8 border border-border text-center shadow-2xl">
+            <div class="w-16 h-16 bg-[#635bff]/10 text-[#635bff] rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fa-solid fa-lock text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Private Portfolio</h3>
+            <p class="text-sm text-muted mb-6">This portfolio is password protected. Please enter the passcode to view the content.</p>
+            
+            <form id="access-form" onsubmit="verifyPasscode(event)" class="space-y-4">
+                <div>
+                    <input type="password" id="passcode-input" placeholder="Enter passcode" class="w-full px-4 py-3 rounded-xl border border-border focus:border-accent focus:ring-2 focus:ring-accent/10 outline-none text-center font-medium transition-all">
+                    <p id="error-message" class="text-red-500 text-xs mt-2 hidden font-medium">Invalid passcode. Please try again.</p>
+                </div>
+                <button type="submit" class="w-full bg-[#635bff] hover:bg-[#0a2540] text-white font-semibold py-3 px-6 rounded-xl transition-all shadow-sm">
+                    Access Portfolio
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <main id="portfolio-content" class="max-w-5xl mx-auto px-6 hidden">
         
         <!-- Header -->
         <header class="text-center mb-20">
@@ -387,6 +408,46 @@
     <footer class="text-center text-sm text-gray-400 mt-20">
         &copy; 2024 Atıl Bilge Örüm. Built for impact.
     </footer>
+
+    <!-- Passcode Verification Script -->
+    <script>
+        // Define your passcode here
+        const PORTFOLIO_PASSCODE = "bilge2026";
+
+        // Check if already authenticated in this session
+        if (sessionStorage.getItem("portfolio_authenticated") === "true") {
+            revealPortfolio();
+        }
+
+        function verifyPasscode(event) {
+            event.preventDefault();
+            const input = document.getElementById("passcode-input").value;
+            const errorMsg = document.getElementById("error-message");
+            
+            if (input === PORTFOLIO_PASSCODE) {
+                sessionStorage.setItem("portfolio_authenticated", "true");
+                revealPortfolio();
+            } else {
+                errorMsg.classList.remove("hidden");
+                const inputField = document.getElementById("passcode-input");
+                inputField.value = "";
+                inputField.focus();
+                
+                // Visual feedback for error
+                inputField.classList.add("border-red-500", "ring-2", "ring-red-500/10");
+                setTimeout(() => {
+                    inputField.classList.remove("border-red-500", "ring-2", "ring-red-500/10");
+                }, 1500);
+            }
+        }
+
+        function revealPortfolio() {
+            const modal = document.getElementById("access-modal");
+            const content = document.getElementById("portfolio-content");
+            if (modal) modal.remove();
+            if (content) content.classList.remove("hidden");
+        }
+    </script>
 
 </body>
 </html>
